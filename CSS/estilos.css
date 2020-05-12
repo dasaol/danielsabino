@@ -1,0 +1,63 @@
+ p {
+     color: yellow;
+     background-color: black;
+     text-align: center;
+     line-height: 20px;
+     letter-spacing: 1px;
+     word-spacing: 3px;
+     text-indent: 30px;
+ }
+
+ .site-title{
+     background-color: black;
+     color: whitesmoke;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     padding-top: 100px;
+     padding-bottom: 100px;
+ }
+
+ .site-subtitle {
+     text-align: center;
+     border-bottom: 2px solid black;
+ }
+
+ body{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     background-color: teal;
+     height: 100vh;
+
+ }
+
+ figcaption{
+     font-family: italic;
+ }
+
+ figure{
+     text-align: center;
+ }
+
+ ul{
+     background-color: #000000;
+     color: #ffff00;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ a{
+     text-decoration: none;
+    color: yellow;
+ }
+
+ a:hover{
+     color: white;
+ }
+
+ .menu li{
+     list-style:none;
+ }
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
