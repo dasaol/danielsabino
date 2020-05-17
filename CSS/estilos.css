@@ -1,63 +1,221 @@
- p {
-     color: yellow;
-     background-color: black;
-     text-align: center;
-     line-height: 20px;
-     letter-spacing: 1px;
-     word-spacing: 3px;
-     text-indent: 30px;
+/*reset do css*/
+*{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
  }
 
  .site-title{
-     background-color: black;
      color: whitesmoke;
      text-align: center;
-     font-family: Arial, Helvetica, sans-serif;
-     padding-top: 100px;
-     padding-bottom: 100px;
+     font-family: 'Indie Flower', cursive;
  }
 
  .site-subtitle {
      text-align: center;
      border-bottom: 2px solid black;
+     font-family: 'Walter Turncoat', cursive;
+ }
+ .topico{
+     text-align: center;
+     margin-bottom: 1em;
+     
  }
 
  body{
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      background-color: teal;
      height: 100vh;
-
+     font-size: 10px;
+     font-family: 'Overpass Mono', monospace;
  }
 
- figcaption{
-     font-family: italic;
+ @media (min-width: 400px) {
+     body{
+         font-size: 16px;
+        }
+    }
+
+ header{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items:center;
+     
  }
 
- figure{
-     text-align: center;
- }
 
  ul{
      background-color: #000000;
      color: #ffff00;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
 
  a{
      text-decoration: none;
-    color: yellow;
  }
 
- a:hover{
+ .curriculo, .contato a{
+     color: black;
+ }
+
+ .menu a:active,
+ .menu a:hover{
      color: white;
  }
 
- .menu li{
+.menu a{
+     color: yellow;
+     display: block;
+     padding: 10px 20px;
+ }
+
+ .menu li {
      list-style:none;
+    
+ }
+
+ .menu{
+     background-color: black;
+     position: fixed;
+     width: 100vw;
+     top:0;    
+     z-index: 1;
  }
 
 .menu ul{
     display: flex;
     justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 500px){
+    .foto img{
+        height: 500px;
+        width: 500px;        
+    }
+}
+
+.sobre figure{
+    float: left;
+    margin-right:1.4em;
+    margin-bottom: 1.4em;
+    margin-top: 1em;
+}
+ 
+.topico{
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+.sobre p{
+    text-indent: 1.4em;
+    text-align: justify;
+    padding-bottom: 1em;
+}
+
+.descrição{
+    margin-top: 2em;
+}
+
+.sobre img {
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+}
+
+
+.curriculo .grid{
+    display: grid;
+    gap: 3em;
+  
+}
+
+@media (min-width: 712px){
+   .grid{
+       grid-template-columns: 180px 180px 180px;
+    } 
+}
+
+@media (min-width: 950px){
+    .grid{grid-template-columns: 180px 180px 180px 180px;
+        justify-content: center;
+        justify-content: space-around;
+    } 
+}
+
+.curriculo figure{
+    text-align: center;
+}
+
+.curriculo img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    transition:500ms;
+    margin-bottom: 1em;
+}
+
+.curriculo img:active,
+.curriculo img:hover{
+    transform:scale(1.8);
+}
+
+.curriculo figcaption{
+    margin-bottom: 2em;
+}
+
+.curriculo .grid {
+    padding: 3em;
+}
+
+.curriculo a:active,
+.curriculo a:hover {
+    color: white;
+}
+
+.sobre,.contato,.curriculo{
+    min-height: 100vh;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px){
+    .sobre,.contato,.curriculo{
+        max-width: 1200px; 
+    }
+}
+
+
+.contato .grid{
+    font-size: 8em;
+    text-align: center;
+}
+
+.contato a{
+    transition: text-shadow 500ms;
+    color: whitesmoke;
+    display: block;
+    padding-bottom: 0.3em;
+}
+
+@media (min-width: 500px){
+    .contato a{
+        display: grid;
+        display: inline-grid;
+    }
+}
+
+@media (min-width: 558px) and (max-width: 748px){
+    .contato a{
+        display: inline-grid;
+        grid-template-columns: 180px;
+    }
+}
+
+.contanto a:active,
+.contato a:hover{
+    text-shadow:0px 0px 10px white;
 }
 
